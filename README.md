@@ -1,6 +1,6 @@
 # README\.md
 
-\# atom\_ai\_tutor 智能家庭教育辅导助手
+## atom_ai_tutor 智能家庭教育辅导助手
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
