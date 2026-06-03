@@ -1,0 +1,17 @@
+*.pyc
+__pycache__/
+.pytest_cache/
+.coverage
+.vscode/
+.idea/
+.env
+data/sqlite/*.db
+data/vector_db/*
+data/raw_file/*
+model/*
+*.gguf
+*.bin
+*.onnx
+*.ckpt
+assets/*
+!assets/.gitkeep

@@ -1,0 +1,36 @@
+app:
+  name: atom_ai_tutor
+  version: "0.1"
+  description: "智能家庭教育辅导助手"
+
+server:
+  host: "0.0.0.0"
+  port: 8000
+  reload: true
+
+database:
+  sqlite_path: "data/sqlite/atom_ai_tutor.db"
+
+vector_db:
+  path: "data/vector_db"
+  collection_prefix: "student_"
+
+model:
+  llm_path: "model/"
+  llm_model: "default-model.gguf"
+  embedding_model: "all-MiniLM-L6-v2"
+
+data:
+  raw_file_path: "data/raw_file"
+  knowledge_std_path: "config/knowledge_std.json"
+
+assets:
+  path: "assets/"
+  images: "assets/images/"
+  logos: "assets/logos/"
+  icons: "assets/icons/"
+  styles: "assets/styles/"
+
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
