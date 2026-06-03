@@ -5,9 +5,10 @@ __pycache__/
 .vscode/
 .idea/
 .env
-data/sqlite/*.db
-data/vector_db/*
-data/raw_file/*
+data/database/*
+data/vector_store/*
+data/raw_resources/*
+data/temp/*
 model/*
 *.gguf
 *.bin

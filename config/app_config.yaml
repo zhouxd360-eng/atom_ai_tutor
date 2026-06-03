@@ -16,10 +16,11 @@ cors:
     - "http://127.0.0.1:8080"
 
 database:
-  sqlite_path: "data/sqlite/atom_ai_tutor.db"
+  path: "data/database/"
+  filename: "tutor.db"
 
-vector_db:
-  path: "data/vector_db"
+vector_store:
+  path: "data/vector_store/"
   collection_prefix: "student_"
 
 model:
@@ -28,7 +29,8 @@ model:
   embedding_model: "all-MiniLM-L6-v2"
 
 data:
-  raw_file_path: "data/raw_file"
+  raw_resources_path: "data/raw_resources/"
+  temp_path: "data/temp/"
   knowledge_std_path: "config/knowledge_std.json"
 
 assets:

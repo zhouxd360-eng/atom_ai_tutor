@@ -16,11 +16,11 @@ def create_app(config):
         allow_headers=["*"],
     )
     
-    from api.student_info import router as student_router
-    from api.study_stat import router as stat_router
-    from api.rag_dispatch import router as rag_router
-    from api.plan_task import router as plan_router
-    from api.multimodal_upload import router as upload_router
+    from api.student_info.routes import router as student_router
+    from api.study_stat.routes import router as stat_router
+    from api.rag_dispatch.routes import router as rag_router
+    from api.plan_task.routes import router as plan_router
+    from api.multimodal_upload.routes import router as upload_router
     
     app.include_router(student_router, prefix="/api/student", tags=["学生信息"])
     app.include_router(stat_router, prefix="/api/stat", tags=["学习统计"])
