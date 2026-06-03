@@ -16,3 +16,8 @@ model/*
 *.ckpt
 assets/*
 !assets/.gitkeep
+!data/database/.gitkeep
+!data/vector_store/.gitkeep
+!data/raw_resources/.gitkeep
+!data/temp/.gitkeep
+!model/.gitkeep
