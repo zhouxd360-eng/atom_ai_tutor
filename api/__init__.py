@@ -10,7 +10,7 @@ def create_app(config):
     
     app.add_middleware(
         CORSMiddleware,
-        allow_origins=["*"],
+        allow_origins=config.get("cors", {}).get("allow_origins", ["*"]),
         allow_credentials=True,
         allow_methods=["*"],
         allow_headers=["*"],

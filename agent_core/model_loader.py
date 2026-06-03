@@ -1,3 +1,4 @@
+from pathlib import Path
 from ctransformers import AutoModelForCausalLM
 from sentence_transformers import SentenceTransformer
 
@@ -8,9 +9,9 @@ class ModelLoader:
         self.embedding_model = None
     
     def load_llm(self):
-        model_path = f"{self.config['model']['llm_path']}{self.config['model']['llm_model']}"
+        model_path = Path(self.config['model']['llm_path']) / self.config['model']['llm_model']
         self.llm = AutoModelForCausalLM.from_pretrained(
-            model_path,
+            str(model_path),
             model_type="llama",
             max_new_tokens=512,
             temperature=0.7
