@@ -2,9 +2,9 @@
 
 \# atom\_ai\_tutor 智能家庭教育辅导助手
 
-\[\!\[License\]\(https://img\.shields\.io/badge/license\-MIT\-blue\.svg\)\]\(LICENSE\)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-\[\!\[Python\]\(https://img\.shields\.io/badge/python\-3\.10\-green\.svg\)\]
+[![Python Version](https://img.shields.io/badge/Python-3.10-green.svg)](https://www.python.org/downloads/release/python-3100/)
 
 **轻量化 · 全本地私有化 · 碎片化迭代 AI 家庭导师 Agent**
 
